@@ -1,12 +1,10 @@
 ### Data Structures & Algorithms
 
-![Coding at the whiteboard - from HBO's Silicon Valley](https://www.cnet.com/a/img/resize/3e400204cec98b4eeb194359869887450f6b8424/hub/2017/03/20/f0048592-75d9-4c65-8c58-2ecc0be3add9/gilfoyle-s02e03.jpg?auto=webp&width=1200)
+![](https://www.cnet.com/a/img/resize/3e400204cec98b4eeb194359869887450f6b8424/hub/2017/03/20/f0048592-75d9-4c65-8c58-2ecc0be3add9/gilfoyle-s02e03.jpg?auto=webp&width=1200)
 
----
+### Topics
 
-### Topics of Study
-
-- [Complexities / BigO / Asymptotic Analysis](#complexities--bigo--asymptotic-analysis)
+- [BigO & Asymptotic Analysis](#bigo)
 - [Data Structures](#data-structures)
     - [Arrays](#arrays)
     - [Linked Lists](#linked-lists)
@@ -17,42 +15,41 @@
     - [Binary search](#binary-search)
     - [Bitwise operations](#bitwise-operations)
 - [Trees](#trees)
-    - [Trees - Intro](#trees---intro)
-    - [Binary search trees: BSTs](#binary-search-trees-bsts)
-    - [Heap / Priority Queue / Binary Heap](#heap--priority-queue--binary-heap)
-    - balanced search trees (general concept, not details)
-    - traversals: preorder, inorder, postorder, BFS, DFS
+    - [Trees](#trees---intro)
+    - [Binary Search Trees or BSTs](#binary-search-trees-bsts)
+    - [Heap, Priority Queue, Binary Heap](#heap--priority-queue--binary-heap)
+    - Balanced Search Trees (General Concepts)
+    - Traversals: BFS, DFS, preorder, inorder, postorder
 - [Sorting](#sorting)
-    - selection
-    - insertion
-    - heapsort
-    - quicksort
-    - mergesort
+    - Selection Sort
+    - Insertion Sort
+    - Heapsort
+    - Quicksort
+    - Mergesort
 - [Graphs](#graphs)
-    - directed
-    - undirected
-    - adjacency matrix
-    - adjacency list
-    - traversals: BFS, DFS
-- [Even More Knowledge](#even-more-knowledge)
+    - Directed
+    - Undirected
+    - Adjacency matrix
+    - Adjacency list
+    - Traversals: BFS, DFS
+- [More Knowledge](#even-more-knowledge)
     - [Recursion](#recursion)
     - [Dynamic Programming](#dynamic-programming)
     - [Design Patterns](#design-patterns)
-    - [Combinatorics (n choose k) & Probability](#combinatorics-n-choose-k--probability)
+    - [Combinatorics & Probability](#combinatorics-n-choose-k--probability)
     - [NP, NP-Complete and Approximation Algorithms](#np-np-complete-and-approximation-algorithms)
-    - [How computers process a program](#how-computers-process-a-program)
+    - [How Computers Process a Program?](#how-computers-process-a-program)
     - [Caches](#caches)
     - [Processes and Threads](#processes-and-threads)
     - [Testing](#testing)
-    - [String searching & manipulations](#string-searching--manipulations)
+    - [String Searching & Manipulations](#string-searching--manipulations)
     - [Tries](#tries)
     - [Floating Point Numbers](#floating-point-numbers)
     - [Unicode](#unicode)
     - [Endianness](#endianness)
     - [Networking](#networking)
-- [Final Review](#final-review)
 
-### Getting the Job
+### CV & Interview Preparations
 
 - [Update Your Resume](#update-your-resume)
 - [Find a Job](#find-a-job)
@@ -61,21 +58,19 @@
 - [Have questions for the interviewer](#have-questions-for-the-interviewer)
 - [Once You've Got The Job](#once-youve-got-the-job)
 
-### Optional Extras & Resources
+### (Optional) Extras & Resources
 
 - [Additional Books](#additional-books)
 - [System Design, Scalability, Data Handling](#system-design-scalability-data-handling)
 - [Additional Learning](#additional-learning)
     - [Compilers](#compilers)
-    - [Emacs and vi(m)](#emacs-and-vim)
-    - [Unix command line tools](#unix-command-line-tools)
-    - [Information theory](#information-theory-videos)
+    - [Information Theory](#information-theory-videos)
     - [Parity & Hamming Code](#parity--hamming-code-videos)
     - [Entropy](#entropy)
     - [Cryptography](#cryptography)
     - [Compression](#compression)
     - [Computer Security](#computer-security)
-    - [Garbage collection](#garbage-collection)
+    - [Garbage Collection](#garbage-collection)
     - [Parallel Programming](#parallel-programming)
     - [Messaging, Serialization, and Queueing Systems](#messaging-serialization-and-queueing-systems)
     - [A*](#a)
@@ -83,60 +78,35 @@
     - [Bloom Filter](#bloom-filter)
     - [HyperLogLog](#hyperloglog)
     - [Locality-Sensitive Hashing](#locality-sensitive-hashing)
-    - [van Emde Boas Trees](#van-emde-boas-trees)
     - [Augmented Data Structures](#augmented-data-structures)
-    - [Balanced search trees](#balanced-search-trees)
-        - AVL trees
-        - Splay trees
-        - Red/black trees
-        - 2-3 search trees
-        - 2-3-4 Trees (aka 2-4 trees)
-        - N-ary (K-ary, M-ary) trees
-        - B-Trees
+    - [Balanced Search Trees](#balanced-search-trees)
     - [k-D Trees](#k-d-trees)
-    - [Skip lists](#skip-lists)
+    - [Skip Lists](#skip-lists)
     - [Network Flows](#network-flows)
     - [Disjoint Sets & Union Find](#disjoint-sets--union-find)
     - [Math for Fast Processing](#math-for-fast-processing)
     - [Treap](#treap)
     - [Linear Programming](#linear-programming-videos)
     - [Geometry, Convex hull](#geometry-convex-hull-videos)
-    - [Discrete math](#discrete-math)
+    - [Discrete Maths](#discrete-math)
 - [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
 - [Video Series](#video-series)
 - [Computer Science Courses](#computer-science-courses)
 - [Papers](#papers)
 
+
 ---
-
-### Let's Get Started
-
-Alright, enough talk, let's learn!
 
 ## Algorithmic complexity / Big-O / Asymptotic analysis
 
-- Nothing to implement here, you're just watching videos and taking notes! Yay!
-- There are a lot of videos here. Just watch enough until you understand it. You can always come back and review.
-- Don't worry if you don't understand all the math behind it.
-- You just need to understand how to express the complexity of an algorithm in terms of Big-O.
 - [ ] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
 - [ ] [Big O Notations (general quick tutorial) (video)](https://www.youtube.com/watch?v=V6mKVRU1evU)
-- [ ] [Big O Notation (and Omega and Theta) - best mathematical explanation (video)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
 - [ ] [Skiena (video)](https://www.youtube.com/watch?v=z1mkCe3kVUA)
 - [ ] [UC Berkeley Big O (video)](https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98)
 - [ ] [Amortized Analysis (video)](https://www.youtube.com/watch?v=B3SpQZaAZP4&index=10&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
-- [ ] TopCoder (includes recurrence relations and master theorem):
-    - [Computational Complexity: Section 1](https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20one)
-    - [Computational Complexity: Section 2](https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20two)
 - [ ] [Cheat sheet](http://bigocheatsheet.com/)
 - [ ] [[Review] Analyzing Algorithms (playlist) in 18 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZMxejjIyFHWa-4nKg6sdoIv)
 
-Well, that's about enough of that.
-
-When you go through "Cracking the Coding Interview", there is a chapter on this, and at the end there is a quiz to see
-if you can identify the runtime complexity of different algorithms. It's a super review and test.
-
-**[⬆ back to top](#table-of-contents)**
 
 ## Data Structures
 
@@ -144,7 +114,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
     - [ ] About Arrays:
     	- [Arrays CS50 Harvard University](https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s)
         - [Arrays (video)](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
-        - [UC Berkeley CS61B - Linear and Multi-Dim Arrays (video)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE) (Start watching from 15m 32s)
+        - [UC Berkeley CS61B - Linear and Multi-Dim Arrays (video)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE)
         - [Dynamic Arrays (video)](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
         - [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
     - [ ] Implement a vector (mutable array with automatic resizing):
@@ -763,25 +733,6 @@ Graphs can be used to represent many problems in computer science, so this secti
         - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
 
 ---
-
-**[⬆ back to top](#table-of-contents)**
-
-## Final Review
-
-    This section will have shorter videos that you can watch pretty quickly to review most of the important concepts.
-    It's nice if you want a refresher often.
-
-- [ ] Series of 2-3 minutes short subject videos (23 videos)
-    - [Videos](https://www.youtube.com/watch?v=r4r1DZcx1cM&list=PLmVb1OknmNJuC5POdcDv5oCS7_OUkDgpj&index=22)
-- [ ] Series of 2-5 minutes short subject videos - Michael Sambol (48 videos):
-    - [Videos](https://www.youtube.com/@MichaelSambol)
-    - [Code Examples](https://github.com/msambol/dsa)
-- [ ] [Sedgewick Videos - Algorithms I](https://www.coursera.org/learn/algorithms-part1)
-- [ ] [Sedgewick Videos - Algorithms II](https://www.coursera.org/learn/algorithms-part2)
-
----
-
-**[⬆ back to top](#table-of-contents)**
 
 ## Update Your Resume
 

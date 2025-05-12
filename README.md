@@ -4,7 +4,7 @@
 
 ---
 
-### Topics
+### Table Of Contents
 
 - [Asymptotic Analysis](#asymptotic-analysis)
 - [Data Structures](#data-structures)
@@ -51,18 +51,8 @@
   - [Endianness](#endianness)
   - [Networking](#networking)
 
-### CV & Interview Preparations
-
-- [Update Your Resume](#update-your-resume)
-- [Find a Job](#find-a-job)
-- [Interview Process & General Interview Prep](#interview-process--general-interview-prep)
-- [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
-- [Have questions for the interviewer](#have-questions-for-the-interviewer)
-- [Once You've Got The Job](#once-youve-got-the-job)
-
 ### Extras & Resources
 
-- [Additional Books](#additional-books)
 - [System Design, Scalability, Data Handling](#system-design-scalability-data-handling)
 - [Additional Learning](#additional-learning)
   - [Compilers](#compilers)
@@ -125,8 +115,12 @@ O(2ⁿ) – Exponential time (recursive Fibonacci)
 
 An array is a contiguous block of memory consisting of equal-sized elements, indexed by consecutive integers. We have constant-time access to read and write elements. Arrays can also be dynamic, allowing their size to grow or shrink at runtime. Arrays can also be multi-dimensional, storing data in rows and columns or higher dimensions.
 
-- [Arrays by CS50](https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s)
-- [Introduction to Arrays on Coursera](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
+Tutorials
+
+- [x] [Arrays by CS50](https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s)
+- [x] [Introduction to Arrays on Coursera](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
+
+Methods
 
 - [x] `len(arr)` - get number of items
 - [x] `[2]` - returns the item at a given index, blows up if index out of bounds
@@ -147,39 +141,14 @@ An array is a contiguous block of memory consisting of equal-sized elements, ind
 
 #### Linked Lists
 
-- [ ] [Linked Lists CS50 Harvard University](https://www.youtube.com/watch?v=2T-A_GFuoTo&t=650s) - this builds the intuition.
-  - [ ] [Singly Linked Lists (video)](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
-  - [ ] [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
-  - [ ] [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
-  - [ ] [[Review] Linked lists in 4 minutes (video)](https://youtu.be/F8AbOfQwl1c)
-- [ ] [C Code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo) - not the whole video, just portions about Node struct and memory allocation
-- [ ] Linked List vs Arrays:
-  - [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
-  - [In The Real World Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
-- [ ] [Why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
-- [ ] Gotcha: you need pointer to pointer knowledge:
-      (for when you pass a pointer to a function that may change the address where that pointer points)
-      This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
-  - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-- [ ] Implement (I did with tail pointer & without):
-  - [ ] size() - returns the number of data elements in the list
-  - [ ] empty() - bool returns true if empty
-  - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
-  - [ ] push_front(value) - adds an item to the front of the list
-  - [ ] pop_front() - remove the front item and return its value
-  - [ ] push_back(value) - adds an item at the end
-  - [ ] pop_back() - removes end item and returns its value
-  - [ ] front() - get the value of the front item
-  - [ ] back() - get the value of the end item
-  - [ ] insert(index, value) - insert value at index, so the current item at that index is pointed to by the new item at the index
-  - [ ] erase(index) - removes node at given index
-  - [ ] value_n_from_end(n) - returns the value of the node at the nth position from the end of the list
-  - [ ] reverse() - reverses the list
-  - [ ] remove_value(value) - removes the first item in the list with this value
-- [ ] Doubly-linked List
-
-  - [Description (video)](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
-  - No need to implement
+- [] [Linked Lists CS50 Harvard University](https://www.youtube.com/watch?v=2T-A_GFuoTo&t=650s)
+- [] [Singly Linked Lists](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
+- [] [CS 61B - Linked Lists 1](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
+- [] [CS 61B - Linked Lists 2](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
+- [] [[Review] Linked lists in 4 minutes](https://youtu.be/F8AbOfQwl1c)
+- [] [Core Linked Lists Vs Arrays](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
+- [] [In The Real World Linked Lists vs Arrays](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
+- [ ] [Why you should avoid linked lists?](https://www.youtube.com/watch?v=YQs6IC-vgmo)
 
 - ### Stack
 
@@ -768,169 +737,6 @@ Graphs can be used to represent many problems in computer science, so this secti
     - [ ] [Java - Sockets - Introduction (video)](https://www.youtube.com/watch?v=6G_W54zuadg&t=6s)
     - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
 
----
-
-## Update Your Resume
-
-- See Resume prep information in the books: "Cracking The Coding Interview" and "Programming Interviews Exposed"
-- ["This Is What A GOOD Resume Should Look Like" by Gayle McDowell (author of Cracking the Coding Interview)](https://www.careercup.com/resume),
-  - Note by the author: "This is for a US-focused resume. CVs for India and other countries have different expectations, although many of the points will be the same."
-- ["Step-by-step resume guide" by Tech Interview Handbook](https://www.techinterviewhandbook.org/resume/guide)
-  - Detailed guide on how to set up your resume from scratch, write effective resume content, optimize it, and test your resume
-
-**[⬆ back to top](#table-of-contents)**
-
-## Interview Process & General Interview Prep
-
-- [ ] [How to Pass the Engineering Interview in 2021](https://davidbyttow.medium.com/how-to-pass-the-engineering-interview-in-2021-45f1b389a1)
-- [ ] [Demystifying Tech Recruiting](https://www.youtube.com/watch?v=N233T0epWTs)
-- [ ] How to Get a Job at the Big 4:
-  - [ ] [How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft (video)](https://www.youtube.com/watch?v=YJZCUhxNCv8)
-  - [ ] [How to Get a Job at the Big 4.1 (Follow-up video)](https://www.youtube.com/watch?v=6790FVXWBw8&feature=youtu.be)
-- [ ] Cracking The Coding Interview Set 1:
-  - [ ] [Gayle L McDowell - Cracking The Coding Interview (video)](https://www.youtube.com/watch?v=rEJzOhC5ZtQ)
-  - [ ] [Cracking the Coding Interview with Author Gayle Laakmann McDowell (video)](https://www.youtube.com/watch?v=aClxtDcdpsQ)
-- [ ] Cracking the Facebook Coding Interview:
-  - [ ] [The Approach](https://www.youtube.com/watch?v=wCl9kvQGHPI)
-  - [ ] [Problem Walkthrough](https://www.youtube.com/watch?v=4UWDyJq8jZg)
-- Prep Courses:
-  - [Python for Data Structures, Algorithms, and Interviews (paid course)](https://www.udemy.com/python-for-data-structures-algorithms-and-interviews/):
-    - A Python-centric interview prep course that covers data structures, algorithms, mock interviews, and much more.
-  - [Intro to Data Structures and Algorithms using Python (Udacity free course)](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513):
-    - A free Python-centric data structures and algorithms course.
-  - [Data Structures and Algorithms Nanodegree! (Udacity paid Nanodegree)](https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256):
-    - Get hands-on practice with over 100 data structures and algorithm exercises and guidance from a dedicated mentor to help prepare you for interviews and on-the-job scenarios.
-  - [Grokking the Behavioral Interview (Educative free course)](https://www.educative.io/courses/grokking-the-behavioral-interview):
-    - Many times, it’s not your technical competency that holds you back from landing your dream job, it’s how you perform on the behavioral interview.
-  - [AlgoMonster (paid course with free content)](https://algo.monster/?utm_campaign=jwasham&utm_medium=referral&utm_content=coding-interview-university&utm_source=github):
-    - The crash course for LeetCode. Covers all the patterns condensed from thousands of questions.
-
-Mock Interviews:
-
-- [Gainlo.co: Mock interviewers from big companies](http://www.gainlo.co/#!/) - I used this and it helped me relax for the phone screen and on-site interview
-- [Pramp: Mock interviews from/with peers](https://www.pramp.com/) - a peer-to-peer model to practice interviews
-- [interviewing.io: Practice mock interview with senior engineers](https://interviewing.io) - anonymous algorithmic/systems design interviews with senior engineers from FAANG anonymously
-- [Meetapro: Mock interviews with top FAANG interviewers](https://meetapro.com/?utm_source=ciu) - an Airbnb-style mock interview/coaching platform.
-- [Hello Interview: Mock Interviews with Expert Coaches and AI](https://www.hellointerview.com/?utm_source=ciu) - interview directly with AI or with FAANG staff engineers and managers.
-- [Codemia: Practice system design problems with AI or community solutions and feedback](https://codemia.io/?utm_source=ciu) - Practice system design problems via AI practice tool. Share your solution with the community to get human feedback as well.
-
-**[⬆ back to top](#table-of-contents)**
-
-## Be thinking of for when the interview comes
-
-Think of about 20 interview questions you'll get, along with the lines of the items below. Have at least one answer for each.
-Have a story, not just data, about something you accomplished.
-
-- Why do you want this job?
-- What's a tough problem you've solved?
-- Biggest challenges faced?
-- Best/worst designs seen?
-- Ideas for improving an existing product
-- How do you work best, as an individual and as part of a team?
-- Which of your skills or experiences would be assets in the role and why?
-- What did you most enjoy at [job x / project y]?
-- What was the biggest challenge you faced at [job x / project y]?
-- What was the hardest bug you faced at [job x / project y]?
-- What did you learn at [job x / project y]?
-- What would you have done better at [job x / project y]?
-
-**[⬆ back to top](#table-of-contents)**
-
-## Have questions for the interviewer
-
-Some of mine (I already may know the answers, but want their opinion or team perspective):
-
-- How large is your team?
-- What does your dev cycle look like? Do you do waterfall/sprints/agile?
-- Are rushes to deadlines common? Or is there flexibility?
-- How are decisions made in your team?
-- How many meetings do you have per week?
-- Do you feel your work environment helps you concentrate?
-- What are you working on?
-- What do you like about it?
-- What is the work life like?
-- How is the work/life balance?
-
-**[⬆ back to top](#table-of-contents)**
-
-## Once You've Got The Job
-
-Congratulations!
-
-Keep learning.
-
-You're never really done.
-
----
-
-    *****************************************************************************************************
-    *****************************************************************************************************
-
-    Everything below this point is optional. It is NOT needed for an entry-level interview.
-    However, by studying these, you'll get greater exposure to more CS concepts and will be better prepared for
-    any software engineering job. You'll be a much more well-rounded software engineer.
-
-    *****************************************************************************************************
-    *****************************************************************************************************
-
----
-
-**[⬆ back to top](#table-of-contents)**
-
-## Additional Books
-
-    These are here so you can dive into a topic you find interesting.
-
-- [The Unix Programming Environment](https://www.amazon.com/dp/013937681X)
-  - An oldie but a goodie
-- [The Linux Command Line: A Complete Introduction](https://www.amazon.com/dp/1593273894/)
-  - A modern option
-- [TCP/IP Illustrated Series](https://en.wikipedia.org/wiki/TCP/IP_Illustrated)
-- [Head First Design Patterns](https://www.amazon.com/gp/product/0596007124/)
-  - A gentle introduction to design patterns
-- [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
-  - AKA the "Gang Of Four" book or GOF
-  - The canonical design patterns book
-- [Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) (Skiena)
-  - As a review and problem-recognition
-  - The algorithm catalog portion is well beyond the scope of difficulty you'll get in an interview
-  - This book has 2 parts:
-    - Class textbook on data structures and algorithms
-      - Pros:
-        - Is a good review as any algorithms textbook would be
-        - Nice stories from his experiences solving problems in industry and academia
-        - Code examples in C
-      - Cons:
-        - Can be as dense or impenetrable as CLRS, and in some cases, CLRS may be a better alternative for some subjects
-        - Chapters 7, 8, and 9 can be painful to try to follow, as some items are not explained well or require more brain than I have
-        - Don't get me wrong: I like Skiena, his teaching style, and mannerisms, but I may not be Stony Brook material
-    - Algorithm catalog:
-      - This is the real reason you buy this book.
-      - This book is better as an algorithm reference, and not something you read cover to cover.
-  - Can rent it on Kindle
-  - Answers:
-    - [Solutions](<https://web.archive.org/web/20150404194210/http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition)>)
-  - [Errata](http://www3.cs.stonybrook.edu/~skiena/algorist/book/errata)
-- [Algorithm](http://jeffe.cs.illinois.edu/teaching/algorithms/) (Jeff Erickson)
-- [Write Great Code: Volume 1: Understanding the Machine](https://www.amazon.com/Write-Great-Code-Understanding-Machine/dp/1593270038)
-  - The book was published in 2004, and is somewhat outdated, but it's a terrific resource for understanding a computer in brief
-  - The author invented [HLA](https://en.wikipedia.org/wiki/High_Level_Assembly), so take mentions and examples in HLA with a grain of salt. Not widely used, but decent examples of what assembly looks like
-  - These chapters are worth the read to give you a nice foundation:
-    - Chapter 2 - Numeric Representation
-    - Chapter 3 - Binary Arithmetic and Bit Operations
-    - Chapter 4 - Floating-Point Representation
-    - Chapter 5 - Character Representation
-    - Chapter 6 - Memory Organization and Access
-    - Chapter 7 - Composite Data Types and Memory Objects
-    - Chapter 9 - CPU Architecture
-    - Chapter 10 - Instruction Set Architecture
-    - Chapter 11 - Memory Architecture and Organization
-- [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen/dp/026204630X)
-  - **Important:** Reading this book will only have limited value. This book is a great review of algorithms and data structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently
-  - AKA CLR, sometimes CLRS, because Stein was late to the game
-- [Computer Architecture, Sixth Edition: A Quantitative Approach](https://www.amazon.com/dp/0128119055)
-  - For a richer, more up-to-date (2017), but longer treatment
-
 **[⬆ back to top](#table-of-contents)**
 
 ## System Design, Scalability, Data Handling
@@ -1058,29 +864,6 @@ You're never really done.
   - [Harvard CS50 - Compilers (video)](https://www.youtube.com/watch?v=CSZLNYF4Klo)
   - [C++ (video)](https://www.youtube.com/watch?v=twodd1KFfGk)
   - [Understanding Compiler Optimization (C++) (video)](https://www.youtube.com/watch?v=FnGCDLhaxKU)
-
-- ### Emacs and vi(m)
-
-  - Familiarize yourself with a UNIX-based code editor
-  - vi(m):
-    - [Editing With Vim 01 - Installation, Setup, and The Modes (video)](https://www.youtube.com/watch?v=5givLEMcINQ&index=1&list=PL13bz4SHGmRxlZVmWQ9DvXo1fEg4UdGkr)
-    - [VIM Adventures](http://vim-adventures.com/)
-    - set of 4 videos:
-      - [The vi/vim editor - Lesson 1](https://www.youtube.com/watch?v=SI8TeVMX8pk)
-      - [The vi/vim editor - Lesson 2](https://www.youtube.com/watch?v=F3OO7ZIOaJE)
-      - [The vi/vim editor - Lesson 3](https://www.youtube.com/watch?v=ZYEccA_nMaI)
-      - [The vi/vim editor - Lesson 4](https://www.youtube.com/watch?v=1lYD5gwgZIA)
-    - [Using Vi Instead of Emacs](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Using_Vi_instead_of_Emacs)
-  - emacs:
-    - [Basics Emacs Tutorial (video)](https://www.youtube.com/watch?v=hbmV1bnQ-i0)
-    - set of 3 (videos):
-      - [Emacs Tutorial (Beginners) -Part 1- File commands, cut/copy/paste, cursor commands](https://www.youtube.com/watch?v=ujODL7MD04Q)
-      - [Emacs Tutorial (Beginners) -Part 2- Buffer management, search, M-x grep and rgrep modes](https://www.youtube.com/watch?v=XWpsRupJ4II)
-      - [Emacs Tutorial (Beginners) -Part 3- Expressions, Statements, ~/.emacs file, and packages](https://www.youtube.com/watch?v=paSgzPso-yc)
-    - [Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs (video)](https://www.youtube.com/watch?v=JWD1Fpdd4Pc)
-    - [Writing C Programs With Emacs](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Writing_C_programs_with_Emacs)
-  - [The Absolute Beginner's Guide to Emacs (video by David Wilson)](https://www.youtube.com/watch?v=48JlgiBpw_I&t=0s)
-  - [The Absolute Beginner's Guide to Emacs (notes by David Wilson)](https://systemcrafters.net/emacs-essentials/absolute-beginners-guide-to-emacs/)
 
 - ### Unix/Linux command line tools
 
